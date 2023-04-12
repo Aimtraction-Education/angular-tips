@@ -1,4 +1,4 @@
-# №11 How can you use a custom injector in Angular?
+# How can you use a custom injector in Angular?
 
 To use a custom injector in Angular, you can create a new instance of the Injector class and configure it with the desired providers.
 
