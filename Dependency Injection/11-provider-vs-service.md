@@ -1,4 +1,4 @@
-# №11 What is the difference between a provider and a service in Angular?
+# What is the difference between a provider and a service in Angular?
 
 In Angular, a provider is a recipe for creating a service, while a service is an instance of a class that can be injected into other components or services.
 
