@@ -2,6 +2,7 @@
 
 To implement a custom provider in Angular, you need to define it in the providers array of the NgModule metadata. This can be done in two ways:
 
+## A
 **Use a class as a provider**: You can provide a class as a provider by adding it to the providers array of your NgModule. When a class is added to the providers array, Angular creates an instance of that class for each component that requests it. For example:
 ```typescript
 import { Injectable } from '@angular/core';
@@ -40,6 +41,7 @@ export class AppComponent {
 ```
 In the above example, we are injecting the MyService provider into the MyComponent component by adding it to the constructor parameters.
 
+## B
 **Use a value as a provider**: You can also provide a value directly instead of a class by using the useValue property of the provider object. This can be useful when you want to provide a constant value that doesn't need to be instantiated. For example:
 
 ```typescript
