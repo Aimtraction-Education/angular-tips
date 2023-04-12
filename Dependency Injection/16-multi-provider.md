@@ -1,3 +1,5 @@
+# What is a multi-provider and how is it used in Angular?
+
 In Angular's DI system, a multi-provider is a way to register multiple providers for the same token. It allows different parts of the application to provide different implementations for the same token, and the DI system will inject all of them as an array.
 
 The `multi` option is used to register a provider as a multi-provider. It can be used with any provider decorator, including `@Injectable`, `@Directive`, `@Component`, and `@Pipe`.
