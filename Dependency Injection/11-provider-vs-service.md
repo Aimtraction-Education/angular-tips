@@ -26,9 +26,9 @@ export class MyService {
 }
 ```
 
-In this example, myProvider is a provider that specifies how to create an instance of MyService. It defines the token (MyService) and a factory function that returns a new instance of MyService with the message "Hello World".
+In this example, `myProvider` is a provider that specifies how to create an instance of `MyService`. It defines the token (`MyService`) and a factory function that returns a new instance of `MyService` with the message "Hello World".
 
-On the other hand, MyService is a service that has a constructor with a message parameter, and a getMessage() method that returns the message.
+On the other hand, `MyService` is a service that has a constructor with a message parameter, and a `getMessage()` method that returns the message.
 
 To use the provider, you would add it to the providers array of a module or component:
 
@@ -46,4 +46,4 @@ export class MyComponent {
   }
 }
 ```
-In this example, MyComponent injects MyService (not the provider) into its constructor. Angular's injector uses the provider to create a new instance of MyService and passes it to the component's constructor. The component can then call getMessage() on the service instance.
+In this example, `MyComponent` injects `MyService` (not the provider) into its constructor. Angular's injector uses the provider to create a new instance of `MyService` and passes it to the component's constructor. The component can then call `getMessage()` on the service instance.

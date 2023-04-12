@@ -1,6 +1,6 @@
 # How do you use hierarchical injectors in Angular?
 
-Suppose we have two services, ServiceA and ServiceB, and ServiceA depends on ServiceB:
+Suppose we have two services, `ServiceA` and `ServiceB`, and `ServiceA` depends on `ServiceB`:
 
 ```typescript
 @Injectable()
@@ -11,7 +11,7 @@ export class ServiceA {
   constructor(private serviceB: ServiceB) {}
 }
 ```
-Now let's say we want to inject ServiceA into ServiceB. We might try to do it like this:
+Now let's say we want to inject `ServiceA` into `ServiceB`. We might try to do it like this:
 
 ```typescript
 @Injectable()
@@ -37,4 +37,4 @@ export class ServiceA {
   constructor(private serviceB: ServiceB) {}
 }
 ```
-Here, we use the forwardRef function to create a forward reference to ServiceA. This allows us to inject ServiceA into ServiceB without causing a circular dependency error.
+Here, we use the `forwardRef` function to create a forward reference to `ServiceA`. This allows us to inject `ServiceA` into `ServiceB` without causing a circular dependency error.
