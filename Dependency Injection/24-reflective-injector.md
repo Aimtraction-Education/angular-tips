@@ -1,4 +1,4 @@
-# 
+# How can you use the ReflectiveInjector class in Angular?
 
 The `ReflectiveInjector` class in Angular is used to instantiate and provide dependencies for a given component or service. It is an advanced API that allows developers to create their own injector instances and specify the dependencies that should be provided to a component or service.
 
